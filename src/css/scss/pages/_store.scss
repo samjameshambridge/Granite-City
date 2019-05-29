@@ -1,0 +1,59 @@
+// store page
+.store-title{
+    margin: 5vh 0;
+}
+
+// ========== store button styling ========== //
+.active-btn,
+.store-btn{
+    background-color: transparent;
+    border: none;
+    margin: 1vh 2vw;
+}
+
+.store-btn{
+    color: grey;
+    font-size: 0.9rem;
+
+    @media screen and (max-width:$small){
+        font-size: 0.75rem;
+    }
+}
+
+.active-btn{
+    color: black;
+    font-size: 1.25rem;
+
+    @media screen and (max-width:$small){
+        font-size: 1rem;
+    }
+}
+
+// ========== list of store products available ========== //
+.card {
+    cursor: pointer;
+    margin: 1.5vh 0;
+    max-height: 40vh;
+    overflow: hidden;
+
+    &:hover{
+        box-shadow: $box-shadow;
+    }
+
+    .card-title{
+        @media screen and (max-width:$small){
+            font-size: 0.8rem;
+        }
+    }
+
+    img{
+        &hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
+.card,
+img {
+    transition: transform 0.6s ease;
+}

@@ -1,0 +1,50 @@
+body{
+    box-sizing: border-box;
+    font-family: "glacial indifference";
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    overflow-x:hidden;
+
+    // styling for all generic utilities
+    a{
+        color: $theme-blue !important;
+        transition: all 0s ease;
+    }
+
+    // remove the blue hightlight that occurs when you click a button
+    button:focus{
+        outline: 0 !important;
+        box-shadow: none !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    nav, 
+    ul,
+    button{
+        font-family: "league-spartan"
+    }
+
+    i{
+        cursor: pointer;
+    }
+
+    p{
+        font-family: "glacial-indifference";
+    }
+
+    ul{
+        list-style-type: none;
+        
+        a{
+            transition: border-bottom 0.15s ease; 
+    
+            &:hover{
+                    border-bottom: solid $theme-blue 2px;
+                    text-decoration: none;
+            }
+            }
+    }
+}

@@ -1,0 +1,219 @@
+// container for the entire checkout page
+.checkout-container {
+  height: 100%;
+  padding: 0 5vw;
+  width: 100%;
+
+  button {
+    transition: all 0.5s ease;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+}
+
+// ========== in case there are no cart items in the cart, the empty cart component will show  ========= //
+.empty-cart-container {
+  margin-top: 20vh;
+  margin-bottom: 47.5vh;
+}
+
+// ========== the dotted border between the shopping basket and the order summary ========== //
+.dotted-border {
+  background: url("img/dotted-border.png") no-repeat;
+  background-position: 62.5%;
+  background-size: contain;
+  height: 80vh;
+}
+
+// ========== shared styling for shopping basket column and order summary column ========== //
+.basket-column,
+.summary-column {
+  min-height: 75vh;
+  padding-top: 4vh;
+
+  @media screen and (max-width: $large) {
+    // as screen downsizes columns stack onto each other so the min height can be set as needed, not at 75vh
+    min-height: auto;
+  }
+
+  button {
+    border: none;
+    padding: 0.5rem 1rem;
+    width: 10vw;
+
+    @media screen and (max-width: $large) {
+      width: 15vw;
+    }
+
+    @media screen and (max-width: $medium) {
+      width: 20vw;
+    }
+
+    @media screen and (max-width: $small) {
+      width: 37.5vw;
+    }
+  }
+}
+
+// ========== shopping basket column ========== //
+.basket-column {
+  // on the horizontal layout, this margin is to keep even spacing
+  margin-left: 7vw;
+
+  @media screen and (max-width: $large) {
+    // when columns stack, even spacing between them is not needed
+    margin-left: 0;
+  }
+
+  .basket-title {
+    margin-bottom: 7.5vh;
+  }
+
+  // this refers to the cart columns: "product" & "price/quantity"
+  .product-info {
+    border-bottom: solid $theme-blue 3px;
+    margin-bottom: 2vh;
+    width: 100%;
+
+    @media screen and (max-width: $medium) {
+      // at medium screen, the column titles (product, price/quantity) are not displayed so the border is not needed
+      border-bottom: none;
+    }
+
+    .product-title {
+      @media screen and (max-width: $small) {
+        font-size: 0.9rem;
+      }
+    }
+
+    .price-title {
+      margin-left: -1vw;
+    }
+  }
+
+  .cart-list {
+    height: 35vh;
+    margin-bottom: 4.5vh;
+    // if the cart items are too long for a height of 35vh, it will become a scrolling box with a custom scrollbar
+    overflow: hidden auto;
+
+    @media screen and (max-width: $medium) {
+      height: 27.5vh;
+    }
+
+    .cart-item {
+      margin: 2vh 0;
+
+      // quantity buttons
+      .quantity-button {
+        background-color: transparent;
+        border: none;
+        // border-radius: 20px;
+        padding: 0 !important;
+      }
+
+      .plus {
+        margin-top: 2.5% !important;
+      }
+
+      img {
+        cursor: pointer;
+      }
+
+      .cart-item-title,
+      .cart-item-price {
+        @media screen and (max-width: $small) {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}
+
+// ========== order summary column ========== //
+.summary-column {
+  // this margin left is for even spacing between the columns
+  margin-left: -1.25vw;
+
+  // when columns stack, margin left is not needed
+  // padding at the bottom is included as height is set to auto
+  @media screen and (max-width: $large) {
+    margin-left: 0;
+    padding-bottom: 5vh;
+  }
+
+  @media screen and (max-width: $small) {
+    border-top: solid $theme-blue 1px;
+    margin: 5vh 5vw 0 5vw;
+  }
+
+  .summary-title {
+    margin-bottom: 12.5vh;
+
+    @media screen and (max-width: $small) {
+      margin-bottom: 10vh;
+    }
+  }
+
+  .subtotal-container,
+  .checkout-total {
+    @media screen and (max-width: $large) {
+      margin-left: 25%;
+      width: 33%;
+    }
+
+    @media screen and (max-width: $medium) {
+      width: 40%;
+    }
+
+    @media screen and (max-width: $small) {
+      margin-left: 15%;
+    }
+  }
+
+  .subtotal-container {
+    border-bottom: solid $theme-blue 3px;
+    padding-bottom: 3vh;
+    padding-right: 8%;
+
+    @media screen and (max-width: $small) {
+      font-size: 0.8rem;
+      padding-bottom: 0;
+    }
+  }
+
+  .checkout-total {
+    font-size: 1.75rem;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+
+    // general reduction in size on a small screen
+    @media screen and (max-width: $small) {
+      font-size: 1rem;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+    }
+  }
+
+  .checkout-button-group {
+    // these media queries keep the group of checkout buttons inline with the checkout totals
+    @media screen and (max-width: $large) {
+      left: 50%;
+      top: 32.5%;
+      position: absolute;
+      width: 40%;
+    }
+
+    @media screen and (max-width: $medium) {
+      left: 60%;
+      top: 47.5%;
+      width: 40%;
+    }
+
+    p {
+      padding-top: 10%;
+    }
+  }
+}

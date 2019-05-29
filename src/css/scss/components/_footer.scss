@@ -1,0 +1,16 @@
+// general footer
+footer {
+    height: 13vh;
+
+    i{
+        transition: all 0.5s ease;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    .footer-logo {
+        height: 13vh;
+    }
+}
