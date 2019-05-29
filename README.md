@@ -1,4 +1,4 @@
-# Lotus
+# Granite City
 
 ![Logo](./src/img/Logo.png)
 
