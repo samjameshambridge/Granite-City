@@ -40,9 +40,9 @@ DropdownItem.propTypes = {
   })
 };
 
-const mapStateToProps = ({ cart }) => {
+const mapStateToProps = ({ cart: { inCart } }) => {
   return {
-    inCart: cart.inCart
+    inCart
   };
 };
 
