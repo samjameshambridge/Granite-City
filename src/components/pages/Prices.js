@@ -12,7 +12,7 @@ function Prices() {
       <NavBar />
       <Title title="granite city prices" className="prices-title" />
       <div className="prices-container row d-flex justify-content-center">
-        <div className="col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <div className="col-md-3 d-flex flex-column justify-content-center align-items-center font-secondary">
           <img
             className="triangle d-none d-md-block mb-5"
             src={yellowtriangle}
@@ -22,7 +22,7 @@ function Prices() {
           <p className="text-muted m-0">Adult: £10</p>
           <p className="text-muted">Under 16's: £8</p>
         </div>
-        <div className="col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <div className="col-md-3 d-flex flex-column justify-content-center align-items-center font-secondary">
           <img
             className="triangle d-none d-md-block mb-5"
             src={bluetriangle}
@@ -32,7 +32,7 @@ function Prices() {
           <p className="text-muted m-0">Adult: £25/month</p>
           <p className="text-muted">Under 16's: £20/month</p>
         </div>
-        <div className="col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <div className="col-md-3 d-flex flex-column justify-content-center align-items-center font-secondary">
           <img
             className="triangle d-none d-md-block mb-5"
             src={purpletriangle}

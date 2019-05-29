@@ -11,7 +11,7 @@ function NavBar({ inCart }) {
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand">
-        <Link to="/" className="navbar-brand">
+        <Link to="/Granite-City/" className="navbar-brand">
           <Logo className="nav-logo" />
         </Link>
         <ul className="navbar-nav w-100 d-flex justify-content-end">
