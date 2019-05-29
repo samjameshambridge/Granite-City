@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Landing from 'components/pages/Landing';
-import OurGym from 'components/pages/OurGym';
-import Prices from 'components/pages/Prices';
-import Store from 'components/pages/Store';
-import Checkout from 'components/pages/Checkout';
-import Contact from 'components/pages/Contact';
-import NotFound from 'components/pages/NotFound';
+import Landing from "components/pages/Landing";
+import OurGym from "components/pages/OurGym";
+import Prices from "components/pages/Prices";
+import Store from "components/pages/Store";
+import Checkout from "components/pages/Checkout";
+import Contact from "components/pages/Contact";
+import NotFound from "components/pages/NotFound";
 
-import { Provider } from 'react-redux';
-import store from 'store';
+import { Provider } from "react-redux";
+import store from "store";
 
-import 'main.css';
+import "main.css";
 
 class App extends Component {
   render() {
@@ -20,7 +20,7 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <Switch>
-            <Route exact path="/" component={Landing} />
+            <Route exact path="/Granite-City" component={Landing} />
             <Route exact path="/our-gym" component={OurGym} />
             <Route exact path="/prices" component={Prices} />
             <Route exact path="/store" component={Store} />
@@ -30,7 +30,6 @@ class App extends Component {
           </Switch>
         </Router>
       </Provider>
-
     );
   }
 }
