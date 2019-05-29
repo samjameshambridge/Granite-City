@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc9f401c9a4686c63bff8d526d4b7c1c",
+    "revision": "db7b60852bbffd714b543d39470db72b",
     "url": "/Granite-City/index.html"
   },
   {
-    "revision": "bf86276c8a49e256e927",
-    "url": "/Granite-City/static/css/main.033d679a.chunk.css"
+    "revision": "f84f0e8eacb53e3d8d7d",
+    "url": "/Granite-City/static/css/main.ba77d492.chunk.css"
   },
   {
     "revision": "aa6244c986fd3d0b20b5",
     "url": "/Granite-City/static/js/2.bd2159a1.chunk.js"
   },
   {
-    "revision": "bf86276c8a49e256e927",
-    "url": "/Granite-City/static/js/main.4bd73e0d.chunk.js"
+    "revision": "f84f0e8eacb53e3d8d7d",
+    "url": "/Granite-City/static/js/main.1c864bbe.chunk.js"
   },
   {
     "revision": "e956d5fbfa6a5229e26c",
