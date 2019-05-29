@@ -20,7 +20,7 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <Switch>
-            <Route exact path="/Granite-City" component={Landing} />
+            <Route exact path="/Granite-City/" component={Landing} />
             <Route exact path="/our-gym" component={OurGym} />
             <Route exact path="/prices" component={Prices} />
             <Route exact path="/store" component={Store} />
