@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db7b60852bbffd714b543d39470db72b",
+    "revision": "b60665abbee787e35bf36c847cb7c7b3",
     "url": "/Granite-City/index.html"
   },
   {
-    "revision": "f84f0e8eacb53e3d8d7d",
-    "url": "/Granite-City/static/css/main.ba77d492.chunk.css"
+    "revision": "423408b7d1798e298dde",
+    "url": "/Granite-City/static/css/main.8401baa6.chunk.css"
   },
   {
     "revision": "aa6244c986fd3d0b20b5",
     "url": "/Granite-City/static/js/2.bd2159a1.chunk.js"
   },
   {
-    "revision": "f84f0e8eacb53e3d8d7d",
-    "url": "/Granite-City/static/js/main.1c864bbe.chunk.js"
+    "revision": "423408b7d1798e298dde",
+    "url": "/Granite-City/static/js/main.1c6755e8.chunk.js"
   },
   {
     "revision": "e956d5fbfa6a5229e26c",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Granite-City/static/media/chalk-bag.3efe30d6.png"
   },
   {
-    "revision": "1cf9a4a954d17fe50679b5635e3f7de5",
-    "url": "/Granite-City/static/media/coffee-cup.1cf9a4a9.png"
+    "revision": "904f2d8301405daa432d79ecba742858",
+    "url": "/Granite-City/static/media/coffee-cup.904f2d83.png"
   },
   {
     "revision": "17f5c76d4168e9c93f562d2d68e44b0c",
