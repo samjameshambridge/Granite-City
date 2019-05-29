@@ -325,12 +325,15 @@ nav {
   .welcome-landing-section .welcome-landing-title span {
     color: #9bd4e4; }
   .welcome-landing-section p {
-    font-family: 'glacial-indifference';
+    font-family: "glacial-indifference";
     font-size: 1.5rem; }
   .welcome-landing-section .downward-arrow {
     font-size: 2.5rem;
     position: relative;
     top: 15vh; }
+    @media screen and (max-width: 576px) {
+      .welcome-landing-section .downward-arrow {
+        top: 10vh; } }
 
 .welcome-info {
   max-height: 100vh; }

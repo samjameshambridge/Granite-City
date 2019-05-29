@@ -1,191 +1,198 @@
 // our gym page
 .welcome-landing-section {
+  height: 100vh;
+  width: 100vw;
+
+  @media screen and (max-width: $medium) {
+    height: 87.5vh;
+  }
+
+  .landing-image {
+    background: yellow;
+    height: 75vh;
+    left: 7.5vw;
+    top: 15vh;
+  }
+
+  .welcome-landing-textgroup {
+    left: 60%;
+    top: 30%;
+    width: 60vh;
+
+    @media screen and (max-width: $medium) {
+      left: 0;
+      top: 35%;
+      width: 100vw;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+
+      @media screen and (min-width: $x-large) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .welcome-landing-title {
+    @media screen and (max-width: $medium) {
+      font-size: 2rem;
+      padding: 0 15%;
+    }
+
+    span {
+      color: $theme-cyan;
+    }
+  }
+
+  p {
+    font-family: "glacial-indifference";
+    font-size: 1.5rem;
+  }
+
+  .downward-arrow {
+    font-size: 2.5rem;
+    position: relative;
+    top: 15vh;
+
+    @media screen and (max-width: $small) {
+      top: 10vh;
+    }
+  }
+}
+
+.welcome-info {
+  max-height: 100vh;
+
+  .triangle {
+    max-height: 18vh;
+    max-width: 18vh;
+  }
+
+  .d-flex {
+    height: 33vh;
+    padding-left: 1vw;
+
+    @media screen and (min-width: $xx-large) {
+      font-size: 1.5rem;
+    }
+  }
+
+  img {
     height: 100vh;
-    width: 100vw;
-
-    @media screen and (max-width:$medium){
-        height: 87.5vh;
-    }
-
-    .landing-image{
-        background: yellow;
-        height: 75vh;
-        left: 7.5vw; top: 15vh;
-    }
-
-    .welcome-landing-textgroup{
-        left: 60%; top:30%;
-        width: 60vh;
-
-        @media screen and (max-width: $medium) {
-            left: 0; top: 35%;
-            width: 100vw;
-        }
-
-        h2{
-            font-size: 2.5rem;
-
-            @media screen and (min-width: $x-large){
-                font-size: 4rem;
-            }
-        }
-    }
-
-    .welcome-landing-title{
-        @media screen and (max-width: $medium) {
-            font-size: 2rem;
-            padding: 0 15%;
-        }
-
-        span{
-            color: $theme-cyan;
-        }
-    }
-
-    p{
-        font-family: 'glacial-indifference';
-        font-size: 1.5rem;
-    }
-
-    .downward-arrow{
-        font-size: 2.5rem;
-        position: relative;
-        top: 15vh;
-    }
-}
-
-.welcome-info{
-    max-height: 100vh;
-
-    .triangle{
-        max-height: 18vh;
-        max-width: 18vh;
-    }
-
-    .d-flex{
-        height: 33vh;
-        padding-left: 1vw;
-
-        @media screen and (min-width:$xx-large){
-            font-size: 1.5rem;
-        }
-    }
-
-    img{
-        height: 100vh;
-        width: 100%;
-    }
-}
-
-.welcome-get-started{
-    padding-bottom: 10vh;
     width: 100%;
-
-    @media screen and (max-width:$medium){
-        max-height: 170vh;
-    }
-
-    .row{
-        padding: 0 9vw;
-    }
-
-    .welcome-get-started-title{
-        padding: 10vh 0;
-
-        @media screen and (max-width:$medium){
-            padding: 7.5vh 5vh 5vh 5vh;
-        }
-    }
-
-    .shoe-img{
-        height: 10vh;
-        margin-top: 5vh;
-
-        @media screen and (max-width:$medium){
-            margin-top: 0;
-        }
-    }
-
-    .cake-img{
-        margin-top: -3vh;
-
-        @media screen and (max-width:$medium){
-            margin-top: 0;
-        }
-    }
-
-    .cake-img,
-    .chalk-img{
-        height: 15vh;
-    }
-
-    .chalk-img{
-        margin-top: -0.75vh;
-    }
-
-    .get-started-info{
-        width: 50%;
-
-        @media screen and (max-width:$medium){
-            width: 85%;
-        }
-    }
-
-    .get-started-store-group{
-        margin-top: 10vh;
-
-        button{
-            border: none;
-            border-radius: 20px;
-            min-height: 5vh;
-            min-width: 7.5vw;
-            padding: 1vh 2vw;
-
-            a{
-                &:hover{
-                    text-decoration: none!important;
-                } 
-            }
-        }
-    }
+  }
 }
 
-.welcome-cafe{
+.welcome-get-started {
+  padding-bottom: 10vh;
+  width: 100%;
+
+  @media screen and (max-width: $medium) {
+    max-height: 170vh;
+  }
+
+  .row {
+    padding: 0 9vw;
+  }
+
+  .welcome-get-started-title {
+    padding: 10vh 0;
+
+    @media screen and (max-width: $medium) {
+      padding: 7.5vh 5vh 5vh 5vh;
+    }
+  }
+
+  .shoe-img {
+    height: 10vh;
+    margin-top: 5vh;
+
+    @media screen and (max-width: $medium) {
+      margin-top: 0;
+    }
+  }
+
+  .cake-img {
+    margin-top: -3vh;
+
+    @media screen and (max-width: $medium) {
+      margin-top: 0;
+    }
+  }
+
+  .cake-img,
+  .chalk-img {
+    height: 15vh;
+  }
+
+  .chalk-img {
+    margin-top: -0.75vh;
+  }
+
+  .get-started-info {
+    width: 50%;
+
+    @media screen and (max-width: $medium) {
+      width: 85%;
+    }
+  }
+
+  .get-started-store-group {
+    margin-top: 10vh;
+
+    button {
+      border: none;
+      border-radius: 20px;
+      min-height: 5vh;
+      min-width: 7.5vw;
+      padding: 1vh 2vw;
+
+      a {
+        &:hover {
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
+}
+
+.welcome-cafe {
+  height: 100vh;
+  overflow: hidden;
+
+  .col-4 {
     height: 100vh;
-    overflow: hidden;
 
-    .col-4{
-        height: 100vh;
-
-        .welcome-cafe-title{
-            padding: 2.5rem;
-        }
-
-        .welcome-cafe-info{
-            margin-left: 50%;
-            width: 50%;
-        }
+    .welcome-cafe-title {
+      padding: 2.5rem;
     }
 
-    .col-8{
-        padding: 0;
-        
-        img{
-            height: 100%;
-            width: 110%;
-        }
+    .welcome-cafe-info {
+      margin-left: 50%;
+      width: 50%;
     }
+  }
+
+  .col-8 {
+    padding: 0;
+
+    img {
+      height: 100%;
+      width: 110%;
+    }
+  }
 }
 
-.welcome-see-you-soon{
-    background: #d2c7ff;
-    height: 40vh;
-    overflow: hidden !important;
-    padding: 0 25vw;
-    width: 100vw;
+.welcome-see-you-soon {
+  background: #d2c7ff;
+  height: 40vh;
+  overflow: hidden !important;
+  padding: 0 25vw;
+  width: 100vw;
 
-    img{
-        height: 10vh;
-        margin: 15vh 5vw;
-    }
+  img {
+    height: 10vh;
+    margin: 15vh 5vw;
+  }
 }

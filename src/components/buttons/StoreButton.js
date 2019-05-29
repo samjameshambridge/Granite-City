@@ -10,11 +10,11 @@ function StoreButton({ className, dataType, onClick, value }) {
 }
 
 StoreButton.propTypes = {
-  detaType: PropTypes.string.isRequired,
+  dataType: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired
 };
 
-StoreButton.propTypes = {
+StoreButton.defaultProps = {
   className: "",
   onClick: () => void 0
 };
