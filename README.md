@@ -5,11 +5,36 @@
 ## Table of contents
 
 - [Introduction](#introduction)
+- [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Features](#features)
 - [Status](#status)
 - [Inspiration](#inspiration)
 - [Contact](#contact)
+
+## Screenshots
+
+The following are snapshots of the Granite City react app. If you would like to try out the app, visit https://samjameshambridge.github.io/Granite-City/.
+
+![landing-page](https://github.com/samjameshambridge/Granite-City/blob/screenshots/screenshots/landing-page.png)
+
+Landing Page on load.
+
+![store-page](https://github.com/samjameshambridge/Granite-City/blob/screenshots/screenshots/store.png)
+
+Store Page.
+
+![purchasing-product](https://github.com/samjameshambridge/Granite-City/blob/screenshots/screenshots/store-modal.png)
+
+Purchasing Product.
+
+![checkout-page](https://github.com/samjameshambridge/Granite-City/blob/screenshots/screenshots/checkout-page.png)
+
+Checkout Page.
+
+![prices-page](https://github.com/samjameshambridge/Granite-City/blob/screenshots/screenshots/prices-page.png)
+
+Price page with dropdown cart open.
 
 ## Introduction
 
@@ -17,6 +42,8 @@ Granite City is an imagined rock climbing gym. This web app is a combination of 
 
 1. Provide information about Granite City climbing gym such as: general information about climbing, contact details and prices.
 2. Allow users to access an e-commerce store where they can select climbing products to checkout and purchase (the final step of paying for items is unavailable).
+
+If you would like to try out the app, visit https://samjameshambridge.github.io/Granite-City/.
 
 ## Technologies
 
