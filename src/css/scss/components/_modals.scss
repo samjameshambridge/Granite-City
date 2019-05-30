@@ -1,6 +1,7 @@
+// ========== store modal is the modal on the store page when you click the product image. checkout modal is the modal when you're on the checkout page on you click an image in your cart list ========== //
+
 .store-modal,
-.checkout-modal,
-.unavailable-feature-modal {
+.checkout-modal {
   background-color: rgba(211, 211, 211, 0.5);
   height: 100vh;
   left: 0;
@@ -21,6 +22,15 @@
       width: 75vw;
     }
 
+    // product title
+    h3 {
+      margin-top: 3vh;
+      @media screen and (max-width: $medium) {
+        font-size: 1.5rem;
+      }
+    }
+
+    // product image
     .modal-img {
       height: 40vh;
 
@@ -29,9 +39,25 @@
       }
     }
 
-    h3 {
-      @media screen and (max-width: $medium) {
-        font-size: 1.5rem;
+    .modal-price {
+      @media screen and (max-width: $small) {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+      }
+    }
+
+    .modal-size-options {
+      margin-top: 1vh;
+      margin-bottom: 2vh;
+
+      @media screen and (max-width: $small) {
+        margin-bottom: 1vh;
+      }
+    }
+
+    .modal-info {
+      @media screen and (max-width: $small) {
+        font-size: 0.7rem;
       }
     }
 

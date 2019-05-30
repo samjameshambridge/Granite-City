@@ -1,3 +1,7 @@
+.our-gym-page-container {
+  overflow-x: hidden;
+}
+
 // our gym page
 .welcome-landing-section {
   height: 100vh;
@@ -19,10 +23,15 @@
     top: 30%;
     width: 60vh;
 
+    // bring text group into the center because image is not displayed on smaller screens
     @media screen and (max-width: $medium) {
       left: 0;
       top: 35%;
       width: 100vw;
+    }
+
+    @media screen and (max-width: $small) {
+      top: 30%;
     }
 
     h2 {
@@ -145,8 +154,12 @@
       border: none;
       border-radius: 20px;
       min-height: 5vh;
-      min-width: 7.5vw;
+      min-width: 10vw;
       padding: 1vh 2vw;
+
+      @media screen and (max-width: $small) {
+        min-width: 20vw;
+      }
 
       a {
         &:hover {
@@ -185,10 +198,7 @@
 }
 
 .welcome-see-you-soon {
-  background: #d2c7ff;
   height: 40vh;
-  overflow: hidden !important;
-  padding: 0 25vw;
   width: 100vw;
 
   img {

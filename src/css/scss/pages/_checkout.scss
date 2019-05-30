@@ -17,6 +17,7 @@
 .empty-cart-container {
   margin-top: 20vh;
   margin-bottom: 47.5vh;
+  padding: 0 7.5vw;
 }
 
 // ========== the dotted border between the shopping basket and the order summary ========== //
@@ -157,10 +158,12 @@
     }
   }
 
+  // subtotal-container refers to "Subtotal" and "Tax"
+  // checkout-total refers to "Total"
   .subtotal-container,
   .checkout-total {
     @media screen and (max-width: $large) {
-      margin-left: 25%;
+      margin-left: 20%;
       width: 33%;
     }
 
@@ -169,7 +172,8 @@
     }
 
     @media screen and (max-width: $small) {
-      margin-left: 15%;
+      margin-left: 5%;
+      width: 50%;
     }
   }
 
@@ -181,6 +185,7 @@
     @media screen and (max-width: $small) {
       font-size: 0.8rem;
       padding-bottom: 0;
+      padding-right: 0;
     }
   }
 
@@ -201,19 +206,31 @@
     // these media queries keep the group of checkout buttons inline with the checkout totals
     @media screen and (max-width: $large) {
       left: 50%;
-      top: 32.5%;
+      top: 45.25%;
       position: absolute;
       width: 40%;
     }
 
     @media screen and (max-width: $medium) {
-      left: 60%;
-      top: 47.5%;
-      width: 40%;
+      left: 55%;
+      top: 45.5%;
     }
 
+    @media screen and (max-width: $small) {
+      left: 57.5%;
+      top: 43%;
+    }
+
+    button {
+      @media screen and (max-width: $small) {
+        font-size: 0.8rem;
+      }
+    }
+
+    // "Or" between paypal and checkout buttons
+    // extra padding evenly spaces the word between the two buttons
     p {
-      padding-top: 10%;
+      padding-top: 7.5%;
     }
   }
 }

@@ -9,8 +9,8 @@ function ModalHead({ detailProduct: { img, price, title } }) {
   return (
     <React.Fragment>
       <ProductImage className="modal-img" img={img} />
-      <Title title={title} className="text-center mt-4" />
-      <p className="lead text-theme-blue">£{price}</p>
+      <Title title={title} className="text-center" />
+      <p className="modal-price lead text-theme-blue">£{price}</p>
     </React.Fragment>
   );
 }

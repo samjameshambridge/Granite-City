@@ -1,57 +1,65 @@
 // container for entire home page
-.landing-page-container{
-    overflow: hidden!important;
+.landing-page-container {
+  overflow: hidden !important;
 }
 
 // ====== LEFT HAND SIDE OF THE LANDING PAGE ====== //
 // full page img of gym wall
 .landing-img {
-    min-height: 100vh;
-    width: 100vw !important;
+  min-height: 100vh;
+  width: 100vw !important;
 }
 
 // ====== RIGHT HAND SIDE OF THE LANDING PAGE ====== //
 
 // sidebar including granite city logo & navigation
 .sidebar-container {
-    left: 70%; top: 10%;
+  left: 70%;
+  top: 10%;
+  z-index: 1;
+
+  // bring everything on the right into the center when the screen is smaller than large
+  @media screen and (max-width: $large) {
+    left: 25%;
+    top: 15%;
+    width: 50vw;
+  }
+
+  // granite city logo over the landing page navigation
+  .landing-logo {
+    margin-bottom: 3vh;
+    max-width: 75%;
+
+    @media screen and (max-width: $large) {
+      margin-bottom: 6vh;
+      max-height: 50vh;
+      max-width: 100%;
+    }
+  }
+
+  // landing page navigation
+  .landing-navigation-ul {
+    padding: 0;
     z-index: 1;
 
-    @media screen and (max-width:$large){
-        left: 25%;
-        width: 50vw;
+    @media screen and (min-width: $xx-large) {
+      font-size: 2rem;
     }
 
-    // granite city logo over the landing page navigation 
-    .landing-logo {
-        margin-bottom: 3vh;
-        max-width: 75%;
-
-        @media screen and (max-width:$large){
-            max-height: 40vh;
-            max-width: 100%;
-        }
+    @media screen and (max-width: $xx-large) {
+      font-size: 1.5rem;
     }
 
-    // landing page navigation
-    .landing-navigation-ul{
-        padding: 0;
-        z-index: 1;
-
-        @media screen and (min-width:$xx-large){
-            font-size: 2rem;
-        }
-
-        @media screen and (max-width: $xx-large){
-            font-size: 1.5rem;
-        }
-
-        @media screen and (max-width: $large){
-            font-size: 1.25rem;
-        }
-    
-        .nav-item{
-            padding: 1vh 0;
-        }
+    @media screen and (max-width: $large) {
+      font-size: 1.25rem;
     }
+
+    @media screen and (max-width: $small) {
+      font-size: 1rem;
+    }
+
+    .nav-item {
+      padding: 1vh 0;
+    }
+  }
 }

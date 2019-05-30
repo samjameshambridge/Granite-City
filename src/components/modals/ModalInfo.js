@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
 function ModalInfo({ info }) {
-  return <p className="text-muted">{info}</p>;
+  return <p className="modal-info text-muted">{info}</p>;
 }
 
 ModalInfo.propTypes = {

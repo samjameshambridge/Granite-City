@@ -40,11 +40,7 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={Instagram}
-                  alt="insta"
-                  className="icon cursor-pointer"
-                />
+                <img src={Instagram} alt="insta" className="cursor-pointer" />
               </a>
               <a
                 href="https://www.facebook.com"
@@ -54,7 +50,7 @@ function Contact() {
                 <img
                   src={Facebook}
                   alt="facebook"
-                  className="icon facebook bg-white cursor-pointer"
+                  className="facebook bg-white cursor-pointer"
                 />
               </a>
               <a
@@ -62,7 +58,7 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={Twitter} alt="twitter" className="icon" />
+                <img src={Twitter} alt="twitter" />
               </a>
               <a
                 href="https://www.linkedin.samuelhambridge.com"
@@ -72,7 +68,7 @@ function Contact() {
                 <img
                   src={LinkedIn}
                   alt="linkedin"
-                  className="icon linkedin bg-white cursor-pointer"
+                  className="linkedin bg-white cursor-pointer"
                 />
               </a>
             </div>

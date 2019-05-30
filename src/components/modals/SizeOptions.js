@@ -2,7 +2,7 @@ import React from "react";
 
 function SizeOptions() {
   return (
-    <div className="d-flex align-items-baseline text-theme-blue mt-1 mb-2">
+    <div className="modal-size-options d-flex align-items-baseline text-theme-blue">
       <label htmlFor="size">Size: </label>
       <select className="form-control w-75">
         <option>7</option>

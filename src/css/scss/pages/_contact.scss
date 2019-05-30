@@ -1,172 +1,164 @@
 // contact page
-.contact-container{
-    height: 87.5vh;
-    overflow: hidden;
-    position: relative;
+.contact-container {
+  height: 87.5vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .visit-us-section,
-.get-in-touch-section{
-    height: 110vh;
-    padding-top: 17.5vh;
-    position: absolute;
-    top: -11vh;
-    width: 55vw;
+.get-in-touch-section {
+  height: 110vh;
+  padding-top: 17.5vh;
+  position: absolute;
+  top: -11vh;
+  width: 55vw;
 
-    @media screen and (max-width:$medium){
-        height: 100vh;
-        transform: rotate(0) !important;
-        width: 49.5%;
-    }
+  @media screen and (max-width: $medium) {
+    height: 100vh;
+    transform: rotate(0) !important;
+    width: 49.5%;
+  }
 
-    @media screen and (max-width: $small){
-        height: 50vh;
-        position: relative;
-        padding-top: 5vh;
-        top: 0;
-        width: 100vw;
-    }
+  @media screen and (max-width: $small) {
+    height: 45vh;
+    position: relative;
+    padding-top: 5vh;
+    top: 0;
+    width: 100vw;
+  }
 
-    .content{
-        @media screen and (max-width:$medium){
-            transform: rotate(0) !important;
-        }
+  .content {
+    @media screen and (max-width: $medium) {
+      transform: rotate(0) !important;
     }
+  }
 
-    // reset the padding that is needed when the content is rotated. !impotant is needed to overwrite later styling for screens larger than medium
-    h2{
-        @media screen and (max-width:$medium){
-            font-size: 1.5rem;
-            padding: 0 !important;
-        }
+  // reset the padding that is needed when the content is rotated. !impotant is needed to overwrite later styling for screens larger than medium
+  h2 {
+    @media screen and (max-width: $medium) {
+      font-size: 1.5rem;
+      padding: 0 !important;
     }
+  }
 }
 
-.visit-us-section{
-    left: -6vw; 
-    transform: rotate(10deg);
-    z-index: -10;
+.visit-us-section {
+  left: -6vw;
+  transform: rotate(10deg);
+  z-index: -10;
 
-    @media screen and (max-width:$medium){
-        left: 0;
+  @media screen and (max-width: $medium) {
+    left: 0;
+  }
+
+  .content {
+    transform: rotate(-10deg);
+
+    h2 {
+      padding-left: 4vw;
     }
 
-    .content{
-        transform: rotate(-10deg);
+    iframe {
+      height: 40vh;
+      margin: 5.5vh 3vw 0 3vw;
+      width: 60%;
 
-        h2{
-            padding-left: 4vw;
-        }
+      @media screen and (max-width: $medium) {
+        width: 75%;
+      }
 
-        iframe{
-            height: 40vh;
-            margin: 5.5vh 3vw 0 3vw;
-            width: 60%;
-
-            @media screen and (max-width:$medium){
-                width: 75%;
-            }
-
-            @media screen and (max-width: $small){
-                margin-top: 2vh;
-                margin-left: 0;
-                height: 20vh;
-            }
-        }
-
-        h4{
-            margin-top: 5vh;
-            padding: 0 3.5vw;
-
-            @media screen and (max-width:$medium){
-                font-size: 1rem;
-            }
-
-            @media screen and (max-width:$small){
-                font-size: 0.9rem;
-            }
-        }
+      @media screen and (max-width: $small) {
+        margin-top: 2vh;
+        margin-left: 0;
+        height: 20vh;
+      }
     }
+
+    h4 {
+      margin-top: 5vh;
+      padding: 0 3.5vw;
+
+      @media screen and (max-width: $medium) {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: $small) {
+        font-size: 0.8rem;
+        margin: 3.5vh 0;
+      }
+    }
+  }
 }
 
-.get-in-touch-section{
-    left: 51%;
-    transform: rotate(10deg);
-    z-index: -10;
+.get-in-touch-section {
+  left: 51%;
+  transform: rotate(10deg);
 
-    @media screen and (max-width:$small){
-        left: 0;
+  @media screen and (max-width: $small) {
+    left: 0;
+  }
+
+  .content {
+    transform: rotate(-10deg);
+
+    h4:first-of-type {
+      margin-top: 15vh;
+      margin-bottom: 7vh;
+
+      @media screen and (max-width: $small) {
+        margin-top: 2vh;
+      }
     }
 
-    .content{
-        transform: rotate(-10deg);
+    h4 {
+      padding-right: 10vw;
 
-        h4:first-of-type{
-            margin-top: 15vh;
-            margin-bottom: 7vh;
+      @media screen and (max-width: $medium) {
+        font-size: 1.2rem;
+        margin-bottom: 15vh;
+        padding-right: 0;
+        width: 100%;
+      }
 
-            @media screen and (max-width: $small){
-                margin-top: 2vh;
-            }
-        }
-
-        h4{
-            padding-right: 10vw;
-
-            @media screen and (max-width: $medium){
-                font-size: 1.2rem;
-                margin-bottom: 15vh;
-                padding-right: 0;
-                width: 100%;
-            }
-
-            @media screen and (max-width: $small){
-                font-size: 0.9rem;
-                margin-bottom: 3vh !important;
-            }
-        }
-
-        .contact-social-media-group{
-            margin-left: 12vw;
-            margin-top: 12.5vh;
-
-            @media screen and (max-width: $medium){
-                margin-left: 0;
-            }
-
-            @media screen and (max-width: $small){
-                margin-top: 0;
-            }
-
-            .icon{
-                cursor:pointer;
-                height: 9vh;
-                margin: 0 0.75vw 0 0.75vw;
-                transition: all;
-                z-index: 10;
-
-                &hover{
-                    cursor: pointer;
-                }
-
-                @media screen and (max-width:$medium){
-                    height: 5vh;
-                    margin: 0
-                    0.5vw 0 0.5vw;
-                }
-
-                @media screen and (max-width:$small){
-                    height: 4vh;
-                }
-            }
-
-            .linkedin{
-                border-radius: 6px;
-            }
-
-            .facebook{
-                border-radius: 9px;
-            }
-        }
+      @media screen and (max-width: $small) {
+        font-size: 0.9rem;
+        margin-bottom: 3vh !important;
+      }
     }
+
+    .contact-social-media-group {
+      margin-left: 12vw;
+      margin-top: 12.5vh;
+
+      @media screen and (max-width: $medium) {
+        margin-left: 0;
+      }
+
+      @media screen and (max-width: $small) {
+        margin-top: 0;
+      }
+
+      img {
+        height: 9vh;
+        margin: 0 0.75vw 0 0.75vw;
+
+        @media screen and (max-width: $medium) {
+          height: 5vh;
+          margin: 0 0.5vw 0 0.5vw;
+        }
+
+        @media screen and (max-width: $small) {
+          height: 4vh;
+        }
+      }
+
+      .linkedin {
+        border-radius: 6px;
+      }
+
+      .facebook {
+        border-radius: 9px;
+      }
+    }
+  }
 }
