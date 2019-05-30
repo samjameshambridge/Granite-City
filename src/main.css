@@ -285,7 +285,7 @@ nav {
 
 .sidebar-container {
   left: 70%;
-  top: 10%;
+  top: 15%;
   z-index: 1; }
   @media screen and (max-width: 992px) {
     .sidebar-container {

@@ -49,13 +49,15 @@ class StoreModal extends Component {
   }
 
   render() {
+    const { detailProduct } = this.props;
+
     return (
       <div className="store-modal position-fixed">
         <div className="modal-container position-fixed d-flex flex-column">
           <CloseButton />
           <div className="h-100 d-flex flex-column align-items-center justify-content-evenly">
             <ModalHead />
-            <SizeOptions />
+            {detailProduct.size ? <SizeOptions /> : null}
             <ModalInfo />
             <ModalButton onClick={this.addCtrl} value="Add to Cart" />
           </div>
