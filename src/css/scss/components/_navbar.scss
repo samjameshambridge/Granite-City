@@ -1,7 +1,12 @@
 // navigation bar that is on all pages exc
 nav {
-  background-color: white;
+  background-color: #fff;
   height: 12.5vh;
+  z-index: 10;
+
+  @media screen and (max-width: $small) {
+    height: auto;
+  }
 
   .navbar-brand {
     height: 7.5vh;
@@ -22,33 +27,42 @@ nav {
     }
   }
 
-  ul {
-    font-size: 1.2rem;
-    padding-right: 1vw;
+  .ul-container {
+    width: 100%;
 
-    @media screen and (max-width: $medium) {
-      font-size: 0.85rem;
-    }
-
-    @media screen and (max-width: $small) {
-      font-size: 0.75rem;
-    }
-
-    .nav-item {
-      padding: 0 2vw;
-      text-decoration: none;
+    ul {
+      font-size: 1.2rem;
+      padding-right: 1vw;
+      width: 100%;
 
       @media screen and (max-width: $medium) {
-        padding: 0 1.25vw;
+        font-size: 0.85rem;
       }
 
       @media screen and (max-width: $small) {
-        padding: 0 1vw;
+        background: #fff;
+        left: 22.5%;
+        margin-top: 2.5vh;
+        position: relative;
+        width: 50vw;
       }
-    }
 
-    .checkoutIcon:hover {
-      border: none;
+      .nav-item {
+        padding: 0 2vw;
+        text-decoration: none;
+
+        @media screen and (max-width: $medium) {
+          padding: 0 1.25vw;
+        }
+
+        @media screen and (max-width: $small) {
+          padding: 1vh 0;
+        }
+      }
+
+      .checkoutIcon:hover {
+        border: none;
+      }
     }
   }
 

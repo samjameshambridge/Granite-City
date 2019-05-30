@@ -20,7 +20,7 @@
   letter-spacing: 0.2rem; }
 
 .text-light-grey {
-  color: #DCDCDC; }
+  color: #dcdcdc; }
 
 .text-theme-blue {
   color: #45546c; }
@@ -180,8 +180,12 @@ footer {
         left: 80vw; } }
 
 nav {
-  background-color: white;
-  height: 12.5vh; }
+  background-color: #fff;
+  height: 12.5vh;
+  z-index: 10; }
+  @media screen and (max-width: 576px) {
+    nav {
+      height: auto; } }
   nav .navbar-brand {
     height: 7.5vh;
     margin-left: 2vw;
@@ -195,26 +199,33 @@ nav {
       @media screen and (max-width: 576px) {
         nav .navbar-brand .nav-logo {
           height: 5vh; } }
-  nav ul {
-    font-size: 1.2rem;
-    padding-right: 1vw; }
-    @media screen and (max-width: 768px) {
-      nav ul {
-        font-size: 0.85rem; } }
-    @media screen and (max-width: 576px) {
-      nav ul {
-        font-size: 0.75rem; } }
-    nav ul .nav-item {
-      padding: 0 2vw;
-      text-decoration: none; }
+  nav .ul-container {
+    width: 100%; }
+    nav .ul-container ul {
+      font-size: 1.2rem;
+      padding-right: 1vw;
+      width: 100%; }
       @media screen and (max-width: 768px) {
-        nav ul .nav-item {
-          padding: 0 1.25vw; } }
+        nav .ul-container ul {
+          font-size: 0.85rem; } }
       @media screen and (max-width: 576px) {
-        nav ul .nav-item {
-          padding: 0 1vw; } }
-    nav ul .checkoutIcon:hover {
-      border: none; }
+        nav .ul-container ul {
+          background: #fff;
+          left: 22.5%;
+          margin-top: 2.5vh;
+          position: relative;
+          width: 50vw; } }
+      nav .ul-container ul .nav-item {
+        padding: 0 2vw;
+        text-decoration: none; }
+        @media screen and (max-width: 768px) {
+          nav .ul-container ul .nav-item {
+            padding: 0 1.25vw; } }
+        @media screen and (max-width: 576px) {
+          nav .ul-container ul .nav-item {
+            padding: 1vh 0; } }
+      nav .ul-container ul .checkoutIcon:hover {
+        border: none; }
   nav .dropdown-menu {
     border: none;
     border-radius: 0;

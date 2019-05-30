@@ -10,31 +10,47 @@ import Dropdown from "components/navigation/dropdown/Dropdown";
 function NavBar({ inCart }) {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand">
-        <Link to="/Granite-City/" className="navbar-brand">
+      <nav className="navbar navbar-expand-sm d-flex">
+        <Link to="/Granite-City/" className="navbar-brand d-none d-sm-block">
           <Logo className="nav-logo" />
         </Link>
-        <ul className="navbar-nav w-100 d-flex justify-content-end">
-          <NavItem linkTo="/our-gym" linkVal="Our Gym" />
-          <NavItem linkTo="/prices" linkVal="Prices" />
-          <NavItem linkTo="/store" linkVal="Store" />
-          <NavItem linkTo="/contact" linkVal="Contact" />
-          {!inCart.length ? null : (
-            <li className="text-theme-blue d-flex justify-content-end">
-              <Link to="/store/checkout" className="checkoutIcon">
-                <i className="fas fa-shopping-cart" />
-              </Link>
-              <button
-                className="dropdown-toggle btn d-none d-lg-block text-theme-blue p-0"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-              />
-              <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <Dropdown />
-              </div>
-            </li>
-          )}
-        </ul>
+        <button
+          className="navbar-toggler btn-block text-theme-blue"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <i className="fas fa-bars fa-2x" />
+        </button>
+        <div
+          className="ul-container text-center collapse navbar-collapse"
+          id="collapsibleNavbar"
+        >
+          <ul className="navbar-nav d-flex justify-content-end text-center">
+            <NavItem linkTo="/our-gym" linkVal="Our Gym" />
+            <NavItem linkTo="/prices" linkVal="Prices" />
+            <NavItem linkTo="/store" linkVal="Store" />
+            <NavItem linkTo="/contact" linkVal="Contact" />
+            {!inCart.length ? null : (
+              <li className="text-theme-blue d-flex justify-content-md-end justify-content-center">
+                <Link to="/store/checkout" className="checkoutIcon">
+                  <i className="fas fa-shopping-cart" />
+                </Link>
+                <button
+                  className="dropdown-toggle btn d-none d-lg-block text-theme-blue p-0"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                />
+                <div
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <Dropdown />
+                </div>
+              </li>
+            )}
+          </ul>
+        </div>
       </nav>
     </React.Fragment>
   );
