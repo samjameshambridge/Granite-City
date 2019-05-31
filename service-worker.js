@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Granite-City/precache-manifest.cb32afc32a8d99836023ddecaaff2cb7.js"
+  "/Granite-City/precache-manifest.0a25725cdf423257533bc98dfbbc1721.js"
 );
 
 self.addEventListener('message', (event) => {
