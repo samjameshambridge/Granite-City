@@ -192,18 +192,22 @@
   .checkout-total {
     font-size: 1.75rem;
     margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-bottom: 5.5vh;
 
     // general reduction in size on a small screen
     @media screen and (max-width: $small) {
       font-size: 1rem;
       margin-top: 2vh;
-      margin-bottom: 2vh;
     }
   }
 
   .checkout-button-group {
     // these media queries keep the group of checkout buttons inline with the checkout totals
+    @media screen and (min-width: $xx-large) {
+      position: relative;
+      top: 4.5vh;
+    }
+
     @media screen and (max-width: $large) {
       left: 50%;
       top: 45.25%;

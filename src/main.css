@@ -631,12 +631,15 @@ img {
   .summary-column .checkout-total {
     font-size: 1.75rem;
     margin-top: 4vh;
-    margin-bottom: 4vh; }
+    margin-bottom: 5.5vh; }
     @media screen and (max-width: 576px) {
       .summary-column .checkout-total {
         font-size: 1rem;
-        margin-top: 2vh;
-        margin-bottom: 2vh; } }
+        margin-top: 2vh; } }
+  @media screen and (min-width: 1400px) {
+    .summary-column .checkout-button-group {
+      position: relative;
+      top: 4.5vh; } }
   @media screen and (max-width: 992px) {
     .summary-column .checkout-button-group {
       left: 50%;
