@@ -57,7 +57,9 @@ class StoreModal extends Component {
           <CloseButton />
           <div className="h-100 d-flex flex-column align-items-center justify-content-evenly">
             <ModalHead />
-            {detailProduct.size ? <SizeOptions /> : null}
+            {detailProduct.size || detailProduct.size === 0 ? (
+              <SizeOptions />
+            ) : null}
             <ModalInfo />
             <ModalButton onClick={this.addCtrl} value="Add to Cart" />
           </div>

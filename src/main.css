@@ -695,8 +695,7 @@ img {
 
 .visit-us-section {
   left: -6vw;
-  transform: rotate(10deg);
-  z-index: -10; }
+  transform: rotate(10deg); }
   @media screen and (max-width: 768px) {
     .visit-us-section {
       left: 0; } }
