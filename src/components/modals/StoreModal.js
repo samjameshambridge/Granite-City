@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
@@ -12,10 +12,8 @@ import ModalInfo from "components/modals/ModalInfo";
 import ModalButton from "components/buttons/ModalButton";
 import CloseButton from "components/buttons/CloseButton";
 
-class StoreModal extends Component {
-  addCtrl = () => {
-    const { addToCart, closeModal, detailProduct, inCart } = this.props;
-
+function StoreModal({ addToCart, closeModal, detailProduct, inCart }) {
+  function addCtrl() {
     if (detailProduct.type === "shoe") {
       const newSize = document.querySelector("select").value,
         existingProduct = inCart.filter(
@@ -35,38 +33,32 @@ class StoreModal extends Component {
     }
 
     closeModal();
-  };
+  }
 
-  componentWillMount() {
-    const { closeModal } = this.props;
-
+  useEffect(() => {
     document.addEventListener("click", function clickClose(e) {
       if (e.target.contains(document.querySelector(".modal-container")))
         closeModal();
 
       document.removeEventListener("click", clickClose);
     });
-  }
+  });
 
-  render() {
-    const { detailProduct } = this.props;
-
-    return (
-      <div className="store-modal position-fixed">
-        <div className="modal-container position-fixed d-flex flex-column">
-          <CloseButton />
-          <div className="h-100 d-flex flex-column align-items-center justify-content-evenly">
-            <ModalHead />
-            {detailProduct.size || detailProduct.size === 0 ? (
-              <SizeOptions />
-            ) : null}
-            <ModalInfo />
-            <ModalButton onClick={this.addCtrl} value="Add to Cart" />
-          </div>
+  return (
+    <div className="store-modal position-fixed">
+      <div className="modal-container position-fixed d-flex flex-column">
+        <CloseButton />
+        <div className="h-100 d-flex flex-column align-items-center justify-content-evenly">
+          <ModalHead />
+          {detailProduct.size || detailProduct.size === 0 ? (
+            <SizeOptions />
+          ) : null}
+          <ModalInfo />
+          <ModalButton onClick={addCtrl} value="Add to Cart" />
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 StoreModal.propTypes = {

@@ -162,15 +162,19 @@ footer {
       border-radius: 20px;
       height: 6vh;
       transition: all 0.5s ease;
-      width: 25%; }
+      width: 30%; }
       .store-modal .modal-container .modal-button:hover,
       .checkout-modal .modal-container .modal-button:hover {
         background: #45546c !important;
         color: white; }
+      @media screen and (max-width: 992px) {
+        .store-modal .modal-container .modal-button,
+        .checkout-modal .modal-container .modal-button {
+          width: 37.5%; } }
       @media screen and (max-width: 768px) {
         .store-modal .modal-container .modal-button,
         .checkout-modal .modal-container .modal-button {
-          width: 50%; } }
+          width: 60%; } }
   .store-modal .close-X,
   .checkout-modal .close-X {
     left: 72vw; }
