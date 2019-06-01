@@ -1,4 +1,4 @@
-# [Granite City](https//:www.samjameshambridge.github.io/Granite-City/)
+# [Granite City](https//samjameshambridge.github.io/Granite-City/)
 
 ![Logo](./src/img/Logo.png)
 
