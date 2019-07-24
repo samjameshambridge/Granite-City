@@ -13,11 +13,8 @@ function ClearCartButton({ className, clearCart }) {
 }
 
 ClearCartButton.propTypes = {
+  className: PropTypes.string,
   clearCart: PropTypes.func.isRequired
-};
-
-ClearCartButton.defaultProps = {
-  className: ""
 };
 
 export default connect(

@@ -13,14 +13,11 @@ function ProductImage({ className, img, onClick }) {
 }
 
 ProductImage.propTypes = {
+  className: PropTypes.string,
+  onClick: PropTypes.func,
   product: PropTypes.shape({
     img: PropTypes.string.isRequired
   })
-};
-
-ProductImage.defaultProps = {
-  className: "",
-  onClick: () => void 0
 };
 
 export default ProductImage;

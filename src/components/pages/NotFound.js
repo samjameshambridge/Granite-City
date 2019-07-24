@@ -25,7 +25,9 @@ function NotFound({ location }) {
 }
 
 NotFound.propTypes = {
-  location: PropTypes.object.isRequired
+  location: PropTypes.shape({
+    pathname: PropTypes.string
+  })
 };
 
 export default NotFound;

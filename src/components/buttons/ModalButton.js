@@ -10,11 +10,8 @@ function ModalButton({ onClick, value }) {
 }
 
 ModalButton.propTypes = {
+  onClick: PropTypes.func,
   value: PropTypes.string.isRequired
-};
-
-ModalButton.defaultProps = {
-  onClick: {}
 };
 
 export default ModalButton;

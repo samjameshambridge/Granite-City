@@ -10,13 +10,10 @@ function StoreButton({ className, dataType, onClick, value }) {
 }
 
 StoreButton.propTypes = {
+  className: PropTypes.string,
   dataType: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
   value: PropTypes.string.isRequired
-};
-
-StoreButton.defaultProps = {
-  className: "",
-  onClick: () => void 0
 };
 
 export default StoreButton;

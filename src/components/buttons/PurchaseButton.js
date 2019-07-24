@@ -16,11 +16,8 @@ function PurchaseButton({ className, value }) {
 }
 
 PurchaseButton.propTypes = {
+  className: PropTypes.string,
   value: PropTypes.string.isRequired
-};
-
-PurchaseButton.defaultProps = {
-  className: ""
 };
 
 export default PurchaseButton;

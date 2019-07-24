@@ -53,13 +53,8 @@ CartItem.propTypes = {
   product: PropTypes.shape({
     img: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired
-  })
-};
-
-CartItem.defaultProps = {
-  product: PropTypes.shape({
-    size: null
+    title: PropTypes.string.isRequired,
+    size: PropTypes.number
   })
 };
 
