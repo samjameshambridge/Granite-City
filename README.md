@@ -63,13 +63,13 @@ This project is written with:
 
 Project is: \_inProgress.
 
-Further down the line, I would like to implement a full back end to the application. Additionaly I would like to include a payment gate to allow users to pay for the products.
+Further down the line, I would like to implement a full back end to the application. Additionally I would like to include a payment gate to allow users to pay for the products.
 
 ## Inspiration
 
-I'd been a member of a climbing gym similar Granite City in my hometown for quite a while however I moved to Aberdeen were no climbing gyms. I wrote this project as an imagination of an climbing gym which I would like to climb at.
+When I moved to Aberdeen there were no climbing gyms which I felt delivered a high quality experience. I wrote this project as an imagination of the perfect climbing gym in Aberdeen.
 
-At the time of starting this project, I was trying to learn Redux state management and was hoping that writing a project like this would give me a firmer grasp on many of the core principles.
+At the time of starting this project, I was trying to learn Redux state management and I was hoping that writing a project like this would give me a firmer grasp on many of the core principles.
 
 ## Contact
 
