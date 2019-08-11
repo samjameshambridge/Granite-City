@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
+// custom maintainer ensures product quantity in json file is appropriately changed
 import { maintainer } from "helpers/maintainers";
 import { decrementItem, incrementItem } from "actions/cartActions";
 

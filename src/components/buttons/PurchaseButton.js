@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 function PurchaseButton({ className, value }) {
   const onClickHandler = () => {
+    // just a little notice to show I havent implemented a payment gateway
     window.alert(
       "Checkout for these items is not currently available (because they don't exist!). But thanks for trying!"
     );
